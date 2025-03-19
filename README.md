@@ -7,9 +7,12 @@ This project uses YOLOv8 for real-time object detection, color recognition, and 
 - Color detection of detected objects
 - Verbal feedback using pyttsx3
 - Depth estimation (placeholder, can be integrated with a stereo camera)
-##Environment Setup
+  
+
+## Environment Setup
 conda create --name yolo8 python=3.9 -y
-##Environment Setup
+
+## Environment Activation
 conda activate yolo8
 ## Installation
 ### Prerequisites
