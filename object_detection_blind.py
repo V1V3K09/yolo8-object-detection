@@ -4,8 +4,12 @@ import numpy as np
 import pyttsx3
 from ultralytics import YOLO
 
-# Load YOLOv8 model
-model = YOLO("yolov8n.pt")
+# Check if GPU is available
+device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
+print(f"Using device: {device}")
+
+# Load YOLOv8 model on the selected device
+model = YOLO("yolov8n.pt").to(device)
 
 # Initialize text-to-speech
 engine = pyttsx3.init()
