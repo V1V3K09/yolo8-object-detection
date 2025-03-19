@@ -10,10 +10,14 @@ This project uses YOLOv8 for real-time object detection, color recognition, and 
   
 
 ## Environment Setup
+```sh
 conda create --name yolo8 python=3.9 -y
+```
 
 ## Environment Activation
+```sh
 conda activate yolo8
+```
 ## Installation
 ### Prerequisites
 Ensure Python (>=3.8) is installed. Then, install dependencies:
